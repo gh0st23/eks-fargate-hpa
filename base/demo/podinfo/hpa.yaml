@@ -13,5 +13,5 @@ spec:
   metrics:
     - type: Pods
       pods:
-        metricName: http_requests_per_second
-        targetAverageValue: 10
+        metricName: appmesh_requests_per_second
+        targetAverageValue: "10"
