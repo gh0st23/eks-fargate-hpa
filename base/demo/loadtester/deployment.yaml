@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: loadtester
-  namespace: demo
+  namespace: habitat-qa
   labels:
     app: loadtester
 spec:
