@@ -3,6 +3,7 @@ kind: HelmRelease
 metadata:
   name: prometheus
   namespace: monitoring-system
+
 spec:
   releaseName: prometheus
   chart:
@@ -12,3 +13,4 @@ spec:
   values:
     retention: 2h
     fullnameOverride: prometheus
+
