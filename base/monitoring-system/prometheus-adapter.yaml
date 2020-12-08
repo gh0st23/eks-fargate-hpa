@@ -59,4 +59,4 @@ spec:
           name:
             matches: http_server_requests_seconds_count
             as: requests_per_second
-          metricsQuery: rate(http_server_requests_seconds_count{job="kubernetes-pods", <<.LabelMatchers>>}[5m])
+          metricsQuery: rate(http_server_requests_seconds_count{job="kubernetes-pods", <<.LabelMatchers>>}[1m])
