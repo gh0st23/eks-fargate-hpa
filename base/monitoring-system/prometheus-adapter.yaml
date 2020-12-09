@@ -72,4 +72,4 @@ spec:
           name:
             matches: http_server_requests_seconds_max
             as: requests_per_second_media
-          metricsQuery: rate(http_server_requests_seconds_sum{job="kubernetes-pods",<<.LabelMatchers>>}[1m]) / rate(http_server_requests_seconds_count{job="kubernetes-pods",<<.LabelMatchers>>}[1m])
+          metricsQuery: 'rate(http_server_requests_seconds_sum{job="kubernetes-pods",<<.LabelMatchers>>}[1m]) / rate(http_server_requests_seconds_count{job="kubernetes-pods",<<.LabelMatchers>>}[1m])''
