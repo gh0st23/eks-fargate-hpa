@@ -72,4 +72,4 @@ spec:
           name:
             matches: http_server_requests_seconds_max
             as: http_server_requests_seconds_max
-          metricsQuery: 'http_server_requests_seconds_max{job="kubernetes-pods",<<.LabelMatchers>>}[1m]'
+          metricsQuery: '<<.Series>>{<<.LabelMatchers>>}'
