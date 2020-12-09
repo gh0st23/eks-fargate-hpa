@@ -59,4 +59,4 @@ spec:
           name:
             matches: http_server_requests_seconds_count
             as: requests_per_second
-          metricsQuery: 'sum(rate(<<.Series>>{<<.LabelMatchers>>}[5m])) by (<<.GroupBy>>)'
+          metricsQuery: 'sum(rate(<<.Series>>{<<.LabelMatchers>>}[1m])) by (<<.GroupBy>>)'
