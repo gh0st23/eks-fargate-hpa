@@ -61,7 +61,7 @@ spec:
             as: requests_per_second
           metricsQuery: 'sum(rate(<<.Series>>{<<.LabelMatchers>>}[1m])) by (<<.GroupBy>>)'
 
-        - seriesQuery: 'http_server_requests_seconds_max{job="kubernetes-pods"}'
+        - seriesQuery: 'catalina_threadpool_currentThreadsBusy{job="kubernetes-pods"}'
           seriesFilters: []
           resources:
             overrides:
@@ -70,6 +70,6 @@ spec:
               kubernetes_namespace:
                 resource: namespace
           name:
-            matches: http_server_requests_seconds_max
-            as: http_server_requests_seconds_max
+            matches: catalina_threadpool_currentThreadsBusy
+            as: catalina_requests_per_second
           metricsQuery: '<<.Series>>{<<.LabelMatchers>>}'
