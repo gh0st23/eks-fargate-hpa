@@ -11,6 +11,6 @@ spec:
     ref: master
     path: stable/appmesh-prometheus
   values:
-    retention: 2h
+    retention: 30m
     fullnameOverride: prometheus
 
